@@ -1,0 +1,179 @@
+
+/* =========================
+   1. General Styles
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eaf0f6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  color: #25364a;
+}
+
+/* =========================
+   2. Main Container
+========================= */
+
+.container {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  padding: 38px;
+  border-radius: 14px;
+  border: 1px solid #dce5ef;
+  box-shadow: 0 12px 35px rgba(31, 55, 80, 0.10);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Blue top line */
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #2878b8;
+}
+
+/* =========================
+   3. Heading
+========================= */
+
+h1 {
+  font-size: 28px;
+  color: #183653;
+  text-align: center;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.description {
+  text-align: center;
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   4. Form Fields
+========================= */
+
+.form-group {
+  margin-bottom: 21px;
+}
+
+label {
+  display: block;
+  color: #344b63;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d5dee8;
+  border-radius: 7px;
+  background: #f9fbfd;
+  color: #25364a;
+  font-size: 14px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+input::placeholder {
+  color: #a0adba;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2878b8;
+  background: #ffffff;
+}
+
+/* =========================
+   5. Error Messages
+========================= */
+
+.error-message {
+  color: #d32f2f;
+  font-size: 12px;
+  margin-top: 7px;
+  min-height: 15px;
+  line-height: 1.4;
+}
+
+/* =========================
+   6. Register Button
+========================= */
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 5px;
+  background: #246b9e;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background: #194f79;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   7. Success Message
+========================= */
+
+.success-message {
+  display: none;
+  margin-top: 20px;
+  padding: 13px;
+  border-radius: 7px;
+  background: #e8f6ed;
+  border: 1px solid #b9e2c6;
+  color: #217442;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* =========================
+   8. Mobile Responsive
+========================= */
+
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+  }
+
+  .container {
+    padding: 27px 22px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}

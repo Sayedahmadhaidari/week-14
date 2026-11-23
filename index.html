@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Create Account</h1>
+
+      <p class="description">Please fill in the form to register.</p>
+
+      <!-- Registration Form -->
+      <form id="registrationForm" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+
+          <input type="text" id="name" placeholder="Enter your name" />
+
+          <p class="error-message" id="nameError"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+
+          <input type="text" id="email" placeholder="Enter your email" />
+
+          <p class="error-message" id="emailError"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+
+          <p class="error-message" id="passwordError"></p>
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <!-- Success Message -->
+      <p class="success-message" id="successMessage">
+        Registration successful! All fields are valid.
+      </p>
+    </main>
+  </body>
+</html>
